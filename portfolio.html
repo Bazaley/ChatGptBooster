@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER =================== -->
+
+    <header class="header">
+      <div class="header__container container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo header__logo">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+
+          <div class="mobile-menu is-hidden" data-mobile-menu>
+            <div class="mobile-menu__container">
+              <button type="button" class="mobile-menu__btn" data-btn-close>
+                <svg class="mobile-menu__icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-list__item">
+                  <a href="./index.html" class="mobile-menu-list__link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-menu-list__item">
+                  <a
+                    href="./portfolio.html"
+                    class="mobile-menu-list__link mobile-menu-list__link_current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-menu-list__item">
+                  <a href="" class="mobile-menu-list__link">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="mobile-contacts__link-phone"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-contacts__link-mail"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="mobile-socials">
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">Instagram</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">Twitter</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">Facebook</a>
+                </li>
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a href="./index.html" class="menu-list__link">Студия</a>
+              </li>
+              <li class="menu-list__item">
+                <a
+                  href="./portfolio.html"
+                  class="menu-list__link menu-list__link_current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-list__item">
+                <a href="" class="menu-list__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link">
+                  <svg class="contacts__icon contacts__icon-mail">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                  <svg class="contacts__icon contacts__icon-phone">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <button type="button" class="header__burger" data-btn-open>
+          <svg class="header__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visualy-hidden">Портфолио</h1>
+
+          <!-- ================= FILTER PORTFOLIO =================== -->
+
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- ================= PORTFOLIO =================== -->
+
+          <ul class="portfolio-list">
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-1.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-1@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-1.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-1@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-1.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-1@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-1.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-1@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-1.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-1@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-1.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-1@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Технокряк</h2>
+                  <p class="portfolio-list__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-2.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-2@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-2.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-2@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-2.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-2@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-2.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-2@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-2.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-2@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-2.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-2@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-2.jpg"
+                      alt="Постер"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-list__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-3.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-3@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-3.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-3@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-3.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-3@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-3.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-3@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-3.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-3@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-3.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-3@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-3.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Ресторан Seafood</h2>
+                  <p class="portfolio-list__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-4.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-4@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-4.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-4@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-4.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-4@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-4.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-4@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-4.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-4@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-4.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-4@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-4.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Проект Prime</h2>
+                  <p class="portfolio-list__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-5.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-5@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-5.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-5@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-5.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-5@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-5.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-5@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-5.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-5@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-5.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-5@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-5.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Проект Boxes</h2>
+                  <p class="portfolio-list__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-6.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-6@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-6.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-6@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-6.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-6@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-6.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-6@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-6.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-6@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-6.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-6@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-6.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-list__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-7.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-7@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-7.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-7@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-7.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-7@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-7.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-7@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-7.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-7@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-7.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-7@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-7.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Издание Limited Edition</h2>
+                  <p class="portfolio-list__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-8.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-8@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-8.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-8@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-8.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-8@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-8.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-8@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-8.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-8@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-8.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-8@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-8.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Проект LAB</h2>
+                  <p class="portfolio-list__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a href="" class="portfolio-list__link">
+                <div class="portfolio-list__image-wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-9.webp    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-9@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/pf-image-desktop-9.jpg    1x,
+                        ./images/portfolio/desktop/pf-image-desktop-9@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-9.webp    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-9@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/pf-image-tablet-9.jpg    1x,
+                        ./images/portfolio/tablet/pf-image-tablet-9@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-9.webp    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-9@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/pf-image-mobile-9.jpg    1x,
+                        ./images/portfolio/mobile/pf-image-mobile-9@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="portfolio-list__image"
+                      src="./images/portfolio/mobile/pf-image-mobile-9.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
+
+                  <p class="portfolio-list__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+
+                <div class="portfolio-list__box">
+                  <h2 class="portfolio-list__title">Growing Business</h2>
+                  <p class="portfolio-list__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER =================== -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer-address">
+          <a href="./index.html" class="logo footer__logo">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-list__item">
+                <a
+                  href="https://goo.gl/maps/miNmiYVtFRc69GQx9"
+                  class="address-list__link address-list__link_color"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="address-list__item">
+                <a href="mailto:info@devstudio.com" class="address-list__link">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-socials">
+          <p class="footer-socials__title">присоединяйтесь</p>
+
+          <ul class="footer-socials-list">
+            <li class="footer-socials-list__item">
+              <a href="" class="footer-socials-list__link">
+                <svg class="footer-socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-list__item">
+              <a href="" class="footer-socials-list__link">
+                <svg class="footer-socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-list__item">
+              <a href="" class="footer-socials-list__link">
+                <svg class="footer-socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-list__item">
+              <a href="" class="footer-socials-list__link">
+                <svg class="footer-socials-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form-subscription">
+          <p class="footer-form-subscription__title">Подпишитесь на рассылку</p>
+
+          <form class="footer-form">
+            <input
+              class="footer-form__input"
+              type="email"
+              name="mail"
+              pattern="[a-zA-Z]*[@][a-z]*[.][a-z]*"
+              required
+              title="my@mail.com"
+              placeholder="E-mail"
+            />
+
+            <button class="footer-form__btn" type="submit">
+              Подписаться
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
