@@ -43,6 +43,10 @@
   @include font(700, 14px, 16px);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features-list__description {
