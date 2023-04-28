@@ -1,0 +1,84 @@
+.header {
+  margin-bottom: -1px;
+  padding: 30px 0 0;
+  background-color: $bg-color;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 0 0;
+  }
+}
+
+.slide {
+  position: relative;
+}
+
+.limited {
+  animation: lim 6s infinite alternate linear;
+}
+
+.use {
+  left: 100%;
+  animation: us 6s infinite 0.1s alternate linear;
+}
+
+.paragraph {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 800;
+  color: $color-8;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    bottom: 10px;
+  }
+}
+
+@keyframes lim {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 0;
+  }
+  45% {
+    right: 0;
+  }
+
+  55% {
+    right: 100%;
+  }
+  75% {
+    right: 100%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes us {
+  0% {
+    left: 100%;
+  }
+  25% {
+    left: 100%;
+  }
+  45% {
+    left: 100%;
+  }
+
+  55% {
+    left: 0;
+  }
+  75% {
+    left: 0;
+  }
+
+  100% {
+    left: 0;
+  }
+}

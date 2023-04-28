@@ -1,0 +1,31 @@
+.master__title {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.master__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.master__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+.master__item {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.master__number {
+  font-size: 25px;
+  font-weight: 800;
+}

@@ -1,0 +1,149 @@
+.hints {
+  background: radial-gradient(circle, #032105 0, #032105 35%, #000 100%);
+}
+
+.hints__title {
+  font-size: 18px;
+  color: $color-8;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hints__description {
+  font-size: 14px;
+  color: $color-8;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.hints__price {
+  @media screen and (max-width: 767px) {
+    height: 90px;
+  }
+}
+
+.hints__right iframe {
+  @media screen and (max-width: 767px) {
+    width: 270px;
+    height: 150px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 550px;
+    height: 300px;
+  }
+}
+
+.hints__collections {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hints__list {
+  padding: 20px;
+  height: max-content;
+  background-color: $color-8;
+  border-radius: 10px;
+  text-align: start;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 20px 0 0;
+    padding: 30px;
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 455px;
+  }
+}
+
+.hints__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.hints__item {
+  font-size: 14px;
+  font-weight: 700;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.hints__price {
+  height: 150px;
+
+  @media screen and (min-width: 768px) {
+    height: 60px;
+  }
+}
+
+.hints__price .old-price {
+  @media screen and (min-width: 768px) {
+    margin-right: 22px;
+    font-size: 18px;
+  }
+}
+
+.hints__price .new-price {
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+}
+
+.hints__discount {
+  font-size: 22px;
+  line-height: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+}
+
+.hints__item {
+  &::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    top: 1;
+    width: 15px;
+    height: 13px;
+    background-image: url(../images/check-mark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.hints__collections .btn {
+  @media screen and (min-width: 768px) {
+    border-radius: 6px;
+    margin: 0;
+    padding: 13px 30px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+.after-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 9px;
+  color: $color-8;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}

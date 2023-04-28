@@ -1,0 +1,29 @@
+.timing__description {
+  margin-top: 33px;
+  margin-bottom: 16px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    margin: 12px 13% 16px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+
+.highlight {
+  color: $btn-color;
+}
+
+.specification {
+  margin: 15px 0;
+  font-size: 17px;
+  line-height: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 15%;
+    font-size: 20px;
+    line-height: 31px;
+  }
+}
